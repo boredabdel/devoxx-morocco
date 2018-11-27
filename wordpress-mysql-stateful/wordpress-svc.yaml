@@ -11,14 +11,3 @@ spec:
     app: wordpress
     tier: frontend
   type: NodePort
----
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: wordpress
-  annotations:
-    kubernetes.io/ingress.global-static-ip-name: "wordpress"
-spec:
-  backend:
-    serviceName: wordpress
-    servicePort: 80
