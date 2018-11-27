@@ -15,7 +15,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: nginx
+  name: wordpress
   annotations:
     kubernetes.io/ingress.global-static-ip-name: "wordpress"
 spec:
